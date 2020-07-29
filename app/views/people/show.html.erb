@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <dl>
+        <dt>Cedula</dt>
+        <dd><%= @person.identificacion %></dd>
+        <dt>Nombre</dt>
+        <dd><%= @person.nombre %></dd>
+        <dt>Edad</dt>
+        <dd><%= @person.edad %></dd>
+      </dl>
+      <%= image_tag(@person.avatar_url) if @person.avatar? %>
+    </div>
+  </div>
+</div>

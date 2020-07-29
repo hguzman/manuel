@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>AQUI ESTA NEW</h1>
+
+      <%= simple_form_for @person, html: { multipart: true } do |f| %>
+        <%= f.input :identificacion %>
+        <%= f.input :nombre %>
+        <%= f.input :edad %>
+        <%= f.input :avatar %>
+        <%= f.input :avatar_cache, as: :hidden %>
+        <%= f.input :remote_avatar_url %>
+        <%= f.button :submit, class: "btn btn-primary" %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
