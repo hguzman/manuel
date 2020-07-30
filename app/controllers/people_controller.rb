@@ -9,7 +9,7 @@ class PeopleController < ApplicationController
   def create
     @person = Person.new(person_params)
     if @person.save
-      flash[:success] = "Guardado correctamente"
+      flash[:notice] = "Guardado correctamente"
       redirect_to @person
     else
       render :new
