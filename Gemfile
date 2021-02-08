@@ -59,4 +59,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'simple_form', '>= 5.0.0'
-gem 'carrierwave', '~> 1.1'
+gem 'carrierwave', '~> 1.3'
